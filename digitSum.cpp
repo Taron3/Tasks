@@ -9,19 +9,19 @@ int digitSum(int number)
     {
         sum += tempNumber % 10;          
         tempNumber /= 10;
-	} 
+    } 
     
     while(sum > 9)
     {
         return digitSum(sum);    
     }
     
-	return number; 
+    return number; 
 }
 
 int main()
 {
-	int in;
-	std::cin >> in;
+    int in;
+    std::cin >> in;
     std::cout << digitSum(in) << std::endl;
 }
